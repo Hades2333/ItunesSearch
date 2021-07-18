@@ -23,13 +23,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-B4-hrF">
-                        <rect key="frame" x="92" y="5" width="271" height="21"/>
+                        <rect key="frame" x="110" y="5" width="253" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGq-1t-MNd">
-                        <rect key="frame" x="92" y="36" width="271" height="21"/>
+                        <rect key="frame" x="110" y="36" width="253" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -41,9 +41,9 @@
                     <constraint firstAttribute="bottom" secondItem="uiS-O6-rEv" secondAttribute="bottom" constant="5" id="OQ2-Mk-MlQ"/>
                     <constraint firstItem="uiS-O6-rEv" firstAttribute="leading" secondItem="u6d-hb-srE" secondAttribute="leading" constant="10" id="Pmd-zP-1rC"/>
                     <constraint firstAttribute="trailing" secondItem="VGq-1t-MNd" secondAttribute="trailing" constant="12" id="YF5-81-t89"/>
-                    <constraint firstItem="DNB-B4-hrF" firstAttribute="leading" secondItem="uiS-O6-rEv" secondAttribute="trailing" constant="12" id="ihF-xj-I7m"/>
+                    <constraint firstItem="DNB-B4-hrF" firstAttribute="leading" secondItem="uiS-O6-rEv" secondAttribute="trailing" constant="30" id="ihF-xj-I7m"/>
                     <constraint firstItem="DNB-B4-hrF" firstAttribute="top" secondItem="u6d-hb-srE" secondAttribute="top" constant="5" id="kCq-XR-74x"/>
-                    <constraint firstItem="VGq-1t-MNd" firstAttribute="leading" secondItem="uiS-O6-rEv" secondAttribute="trailing" constant="12" id="nEK-Wg-VX8"/>
+                    <constraint firstItem="VGq-1t-MNd" firstAttribute="leading" secondItem="uiS-O6-rEv" secondAttribute="trailing" constant="30" id="nEK-Wg-VX8"/>
                     <constraint firstAttribute="trailing" secondItem="DNB-B4-hrF" secondAttribute="trailing" constant="12" id="wc6-US-Ktd"/>
                 </constraints>
             </tableViewCellContentView>

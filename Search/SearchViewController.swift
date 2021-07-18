@@ -42,6 +42,10 @@ class SearchViewController: UIViewController {
           TableView.CellIdentifiers.nothingFoundCell)
 
         searchBar.delegate = self
+        searchBar.tintColor = .white
+        searchBar.backgroundColor = .white
+        searchBar.searchTextField.backgroundColor = .white
+        searchBar.becomeFirstResponder()
     }
 
 
@@ -68,12 +72,13 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
                   for: indexPath)
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier:
-                  TableView.CellIdentifiers.searchResultCell,
-                  for: indexPath) as! SearchResultCell
+                                                        TableView.CellIdentifiers.searchResultCell,
+                                                     for: indexPath) as! SearchResultCell
             let searchResult = searchResults[indexPath.row]
-                cell.nameLabel.text = searchResult.name
-                cell.artistNameLabel.text = searchResult.artistName
-                return cell
+            cell.nameLabel.text = searchResult.name
+            cell.artistNameLabel.text = searchResult.artistName
+            cell.imageView?.image = UIImage(named: "greenDragon")
+            return cell
         }
     }
 
