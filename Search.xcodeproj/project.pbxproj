@@ -17,6 +17,7 @@
 		14877ADD26A4430F0079E5EB /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14877ADC26A4430F0079E5EB /* SearchResultCell.xib */; };
 		14877ADF26A4466C0079E5EB /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14877ADE26A4466C0079E5EB /* SearchResultCell.swift */; };
 		14877AE226A448040079E5EB /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14877AE126A448040079E5EB /* NothingFoundCell.xib */; };
+		14877AE426A5F2DD0079E5EB /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14877AE326A5F2DD0079E5EB /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		14877ADC26A4430F0079E5EB /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		14877ADE26A4466C0079E5EB /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		14877AE126A448040079E5EB /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		14877AE326A5F2DD0079E5EB /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				14877ADA26A43FE40079E5EB /* SearchResult.swift */,
 				14877ADC26A4430F0079E5EB /* SearchResultCell.xib */,
 				14877AE126A448040079E5EB /* NothingFoundCell.xib */,
+				14877AE326A5F2DD0079E5EB /* LoadingCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				14877AD326A43A450079E5EB /* LaunchScreen.storyboard in Resources */,
 				14877AD026A43A450079E5EB /* Assets.xcassets in Resources */,
+				14877AE426A5F2DD0079E5EB /* LoadingCell.xib in Resources */,
 				14877ADD26A4430F0079E5EB /* SearchResultCell.xib in Resources */,
 				14877ACE26A43A440079E5EB /* Main.storyboard in Resources */,
 				14877AE226A448040079E5EB /* NothingFoundCell.xib in Resources */,
