@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1xL-uf-Bnq">
-                                <rect key="frame" x="0.0" y="95" width="414" height="801"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <searchBar contentMode="redraw" text="" placeholder="App name, artist, song, album, e-book" id="KHP-NI-3mk">
@@ -28,18 +28,41 @@
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <navigationBar contentMode="scaleToFill" id="Pn7-KK-5ax">
+                                <rect key="frame" x="0.0" y="95" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="FYA-Ul-KT1">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="bZZ-43-y0F">
+                                            <rect key="frame" x="16" y="5.5" width="382" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-books"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ecK-P0-8uR"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="1xL-uf-Bnq" secondAttribute="bottom" id="Keb-5f-ABr"/>
-                            <constraint firstItem="1xL-uf-Bnq" firstAttribute="top" secondItem="KHP-NI-3mk" secondAttribute="bottom" id="QA6-AO-kvd"/>
-                            <constraint firstItem="1xL-uf-Bnq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RZC-WX-hbt"/>
-                            <constraint firstItem="1xL-uf-Bnq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mTz-Rh-oYn"/>
+                            <constraint firstItem="1xL-uf-Bnq" firstAttribute="top" secondItem="Pn7-KK-5ax" secondAttribute="bottom" id="ACW-dy-TLn"/>
+                            <constraint firstItem="1xL-uf-Bnq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lrn-7A-3wP"/>
+                            <constraint firstItem="1xL-uf-Bnq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tfv-Mc-Enp"/>
+                            <constraint firstAttribute="bottom" secondItem="1xL-uf-Bnq" secondAttribute="bottom" id="yPR-IB-YdM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="KHP-NI-3mk" id="PAZ-9T-Gwx"/>
+                        <outlet property="segmentedControl" destination="bZZ-43-y0F" id="zWk-0F-UXP"/>
                         <outlet property="tableView" destination="1xL-uf-Bnq" id="5NO-hD-Wg7"/>
                     </connections>
                 </viewController>
