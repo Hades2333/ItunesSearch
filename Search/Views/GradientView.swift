@@ -13,11 +13,13 @@ class GradientView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        autoresizingMask = [.flexibleWidth , .flexibleHeight]
         backgroundColor = UIColor.clear
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        autoresizingMask = [.flexibleWidth , .flexibleHeight]
         backgroundColor = UIColor.clear
     }
 
