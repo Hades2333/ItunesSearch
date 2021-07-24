@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+            <point key="canvasLocation" x="340" y="-735"/>
         </scene>
         <!--Detail-->
         <scene sceneID="1wT-Cd-GvF">
@@ -223,13 +223,17 @@
                     <connections>
                         <outlet property="pageControl" destination="QaF-hV-pYi" id="0NY-M5-qJL"/>
                         <outlet property="scrollView" destination="epy-Du-5Rq" id="H6f-Q7-Fnn"/>
+                        <segue destination="bmj-h6-LfL" kind="showDetail" identifier="ShowDetail" id="Vpd-BG-aKD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KhE-Ee-BEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847.5446428571427" y="115.94202898550725"/>
+            <point key="canvasLocation" x="188" y="117"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pe9-Um-43Y"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="clear.fill" catalog="system" width="128" height="114"/>
         <systemColor name="secondarySystemBackgroundColor">
